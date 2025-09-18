@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		481720282E7C8A9E00ECA340 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 481720272E7C8A9E00ECA340 /* Factory */; };
+		4817202A2E7C8A9E00ECA340 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 481720292E7C8A9E00ECA340 /* FactoryKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4817200B2E7C416900ECA340 /* TicTacToe-TheOne-Course.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TicTacToe-TheOne-Course.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4817202A2E7C8A9E00ECA340 /* FactoryKit in Frameworks */,
+				481720282E7C8A9E00ECA340 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = "TicTacToe-TheOne-Course";
 			packageProductDependencies = (
+				481720272E7C8A9E00ECA340 /* Factory */,
+				481720292E7C8A9E00ECA340 /* FactoryKit */,
 			);
 			productName = "TicTacToe-TheOne-Course";
 			productReference = 4817200B2E7C416900ECA340 /* TicTacToe-TheOne-Course.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = 481720022E7C416900ECA340;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				481720262E7C8A9E00ECA340 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4817200C2E7C416900ECA340 /* Products */;
 			projectDirPath = "";
@@ -332,6 +344,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		481720262E7C8A9E00ECA340 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		481720272E7C8A9E00ECA340 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 481720262E7C8A9E00ECA340 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		481720292E7C8A9E00ECA340 /* FactoryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 481720262E7C8A9E00ECA340 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 481720032E7C416900ECA340 /* Project object */;
 }
