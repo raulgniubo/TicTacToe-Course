@@ -16,6 +16,10 @@ extension Container {
     self { MainActor.assumeIsolated { GameSetupLiveStore() } }.singleton
   }
   
+  var botEngineService: Factory<BotEngineService> {
+    self { MainActor.assumeIsolated { BotEngineService() } }.singleton
+  }
+  
   var errorHandlerService: Factory<ErrorHandlerProtocol> {
     self { MainActor.assumeIsolated { ErrorHandlerService() } }.singleton
   }
